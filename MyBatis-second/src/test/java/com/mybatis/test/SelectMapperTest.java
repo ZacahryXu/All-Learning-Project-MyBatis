@@ -28,6 +28,7 @@ public class SelectMapperTest {
      * int-->_int,_integer
      * Map-->map
      * String-->string
+     * 修改
      */
     @Test
     public void testGetAllUsertoMap(){
