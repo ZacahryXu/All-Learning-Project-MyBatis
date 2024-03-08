@@ -19,4 +19,12 @@ public interface SQLMapper {
      * 批量删除
      */
     int deleteMore(@Param("ids") String ids);
+    /**
+     * 查询指定表中的数据
+     */
+    List<User> getUserByTabName(@Param("tableName") String tableName);
+    /**
+     * 添加用户信息
+     */
+    void insertUser(User user);
 }
