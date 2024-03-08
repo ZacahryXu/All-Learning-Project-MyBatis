@@ -11,6 +11,8 @@
     <modules>
         <module>MyBatis-first</module>
         <module>MyBatis-second</module>
+        <module>MyBatis-third</module>
+
     </modules>
 
     <properties>
