@@ -20,7 +20,6 @@ public  class SqlSessionUtils {
             InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
             SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
             sqlSession= sqlSessionFactory.openSession(true);
-            System.out.println("数据库操作成功");
         } catch (IOException e) {
             e.printStackTrace();
         }
