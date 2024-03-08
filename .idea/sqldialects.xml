@@ -3,6 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/MyBatis-first/src/main/resources/com/mybatis/mapper/UserMapper.xml" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/MyBatis-second/src/main/resources/com/mybatis/mapper/ParameterMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/MyBatis-second/src/main/resources/com/mybatis/mapper/SQLMapper.xml" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/MyBatis-second/src/main/resources/com/mybatis/mapper/SelectMapper.xml" dialect="MySQL" />
   </component>
 </project>
