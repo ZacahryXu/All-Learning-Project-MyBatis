@@ -1,4 +1,8 @@
+package com.mybatis.test;
+
+import com.mybatis.mapper.DeptMapper;
 import com.mybatis.mapper.EmpMapper;
+import com.mybatis.pojo.Dept;
 import com.mybatis.pojo.Emp;
 import com.mybatis.utils.SqlSessionUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -26,7 +30,19 @@ public class ResultMapTest {
      * 处理多对一的映射关系：
      * a>级联属性赋值
      * b>association
+     * c>分步查询
+     *
+     * 处理一对多的映射关系
+     * a>collection
+     * b>分步查询
      */
+    @Test
+    public void testGetEmpAndDeptByStep(){
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
+        Emp emp = mapper.getEmpAndDeptByStepOne(1);
+        System.out.println(emp.getEmpName());
+    }
     @Test
     public void testGetEmpAndDept(){
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
@@ -40,5 +56,20 @@ public class ResultMapTest {
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         List<Emp> list = mapper.getAllEmp();
         list.forEach(emp -> System.out.println(emp));
+    }
+
+    @Test
+    public void testGetDeptAndEmp(){
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        DeptMapper mapper = sqlSession.getMapper(DeptMapper.class);
+        Dept dept = mapper.getDeptAndEmp(1);
+        System.out.println(dept);
+    }
+    @Test
+    public void testGetDeptAndEmptyByStep(){
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        DeptMapper mapper = sqlSession.getMapper(DeptMapper.class);
+        Dept dept = mapper.getDeptAndEmpByStepOne(1);
+        System.out.println(dept.getDeptName());
     }
 }

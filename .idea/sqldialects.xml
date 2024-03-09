@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/MyBatis-second/src/main/resources/com/mybatis/mapper/ParameterMapper.xml" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/MyBatis-second/src/main/resources/com/mybatis/mapper/SQLMapper.xml" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/MyBatis-second/src/main/resources/com/mybatis/mapper/SelectMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/MyBatis-third/src/main/resources/com/mybatis/mapper/DeptMapper.xml" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/MyBatis-third/src/main/resources/com/mybatis/mapper/EmpMapper.xml" dialect="MySQL" />
   </component>
 </project>
