@@ -12,6 +12,7 @@
         <module>MyBatis-first</module>
         <module>MyBatis-second</module>
         <module>MyBatis-third</module>
+        <module>MyBatis_MBG</module>
 
     </modules>
 
